@@ -1,4 +1,6 @@
-const db = require("../models");
+/* eslint-disable func-names */
+/* eslint-disable object-shorthand */
+const db = require('../models');
 
 // Defining methods for the restaurantsController
 module.exports = {
@@ -8,6 +10,7 @@ module.exports = {
       .then((dbModel) => res.json(dbModel))
       .catch((err) => res.status(422).json(err));
   },
+  // eslint-disable-next-line func-names
   findById: function (req, res) {
     db.Restaurant.findById(req.params.id)
       .then((dbModel) => res.json(dbModel))

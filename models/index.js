@@ -1,3 +1,2 @@
-module.exports = {
-    Restaurant: require("./restaurant")
-  };
+// eslint-disable-next-line global-require
+module.exports = { Restaurant: require('./restaurant') };
