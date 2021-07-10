@@ -15,3 +15,8 @@ plugins:
   - react
   - '@typescript-eslint'
 rules: {}
+settings: {
+    react: {
+      version: '999.999.999'
+    }
+  }
